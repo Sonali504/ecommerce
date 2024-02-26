@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <title>Modist-Fashion Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"><img src="assets/images/logo.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">About Us</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="Shop.html" class="nav__link">Shop Now</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Summer Arrival Soon</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Search button -->
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+                
+                <!-- shopping-cart -->
+                <i class="ri-shopping-cart-line" style="font-size: 20px;"></i>
+
+                <!-- heart  -->
+                <i class="ri-heart-add-line" style="font-size: 20px;"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+
+            <div class="login__group">
+                <div>
+                    <label for="email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" id="email" class="login__input">
+                </div>
+
+                <div>
+                    <label for="password" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" class="login__input">
+                </div>
+            </div>
+
+            <div>
+                <p class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </p>
+
+                <a href="#" class="login__forgot">
+                    You forgot your password
+                </a>
+
+                <button type="submit" class="login__button">Log In</button>
+            </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+    <main>
+        <div class="left-column">
+            <h1>High-quality fashion without the hefty price tag.</h1>
+            <br>
+            <p class="subhead">
+                No need to spend $xxxx on appreal for the name sake. Our premium appreal is made from the same stuff.
+            </p>
+            <br>
+            <div class="left-btn">
+                <a href="" class="pri">Browse our Collection</a>
+                <a href="" class="sec">
+                    <span>Winter '23 Collection</span>
+                </a>
+            </div>
+            <br>
+            <div class="em">
+                <p class="emp">200+</p>
+                <p class="detail">We're product to announce that we now we are launching <strong>200+</strong> new product. It's possible beacuase of you </p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="card card1">
+                <div class="card-detail">
+                    <div class="">
+                        <a href="#" class="product-detail">Modist</a>
+                        <p>Denim Jacket</p>
+                    </div>
+                    <p class="product-price">$20</p>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="card-detail">
+                    <div class="">
+                        <a href="#" class="product-detail">Modist</a>
+                        <p>Denim Jacket</p>
+                    </div>
+                    <p class="product-price">$20</p>
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="card-detail">
+                    <div class="">
+                        <a href="#" class="product-detail">Modist</a>
+                        <p>Denim Jacket</p>
+                    </div>
+                    <p class="product-price">$20</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
