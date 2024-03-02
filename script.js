@@ -1,44 +1,38 @@
-/*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu'),
-  navToggle = document.getElementById('nav-toggle'),
-  navClose = document.getElementById('nav-close')
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
 
-/* Menu show */
-navToggle.addEventListener('click', () => {
-  navMenu.classList.add('show-menu')
-})
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+});
 
-/* Menu hidden */
-navClose.addEventListener('click', () => {
-  navMenu.classList.remove('show-menu')
-})
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".img-slide");
+const contents = document.querySelectorAll(".content");
 
-/*=============== SEARCH ===============*/
-const search = document.getElementById('search'),
-  searchBtn = document.getElementById('search-btn'),
-  searchClose = document.getElementById('search-close')
+var sliderNav = function(manual){
+    btns.forEach((btn) => {
+        btn.classList.remove("active");
+    });
 
-/* Search show */
-searchBtn.addEventListener('click', () => {
-  search.classList.add('show-search')
-})
+    slides.forEach((slide) => {
+        slide.classList.remove("active");
+    });
 
-/* Search hidden */
-searchClose.addEventListener('click', () => {
-  search.classList.remove('show-search')
-})
+    contents.forEach((content) => {
+        content.classList.remove("active");
+    });
 
-/*=============== LOGIN ===============*/
-const login = document.getElementById('login'),
-  loginBtn = document.getElementById('login-btn'),
-  loginClose = document.getElementById('login-close')
+    btns[manual].classList.add("active");
+    slides[manual].classList.add("active");
+    contents[manual].classList.add("active");
+}
 
-/* Login show */
-loginBtn.addEventListener('click', () => {
-  login.classList.add('show-login')
-})
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+            sliderNav(i)
+        });
+    });
 
-/* Login hidden */
-loginClose.addEventListener('click', () => {
-  login.classList.remove('show-login')
-})
+
+    
